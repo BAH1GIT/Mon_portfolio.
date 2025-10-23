@@ -5,43 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon_portfolio</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="">
         <div class="flex between acentre boxe">
-            <button onclick="openMenu()" class="btn">
+            <!-- <button onclick="openMenu()" class="btn">
                 <span class="material-icons">menu</span>
-            </button >
+            </button> -->
             <a href="#" class="logo">
                 <h1>DIAN.</h1>
             </a>
             <ul class="menu">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Competences</a></li>
-                <li><a href="#">Realisations</a></li>
-                <li><a href="#">Conctact</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#competence">Competences</a></li>
+                <li><a href="#realisation">Realisations</a></li>
+                <li><a href="#contact">Conctact</a></li>
             </ul>
-            
+
         </div>
     </header>
 
 
-    <div class="acceuil">
+    <!-- <div class="acceuil">
         <img src="image/images.jpg" alt="" class="accueil_img">
 
         <div class="content">
-            <h1>DIAN BAH</h1>
-            <p>Je suis developeur front-end </p>
+             <h1>Hi, Je m'appelle Dian BAH</h1>
+            <h3>Frontend Developer</h3>
+            <p>Le développeur front End programme la partie visible, l’interface utilisateur d’une app ou d’un site web
+                à l’inverse du développeur back-end qui travaille dans l’ombre.</p>
+            <p>Son métier ressemble à celui d’un intégrateur web, mais il a un rôle plus important dans la création
+                d’une solution web grâce à ses nombreuses compétences en développement. C’est pourquoi on parle aussi de
+                développeur intégrateur web.</p>
+            <p>Il contribue largement à ce que l’utilisateur ait une navigation fluide et agréable via
+                une interface ergonomique dont il a la responsabilité du développement.
+            </p>
+        </div>
+    </div> -->
+    <div class="sec1 justify-content-between align-items-center">
+        <div class="content">
+            <h3>Salut, moi c'est</h3>
+            <h1>M. DIAN BAH</h1>
+            <h3>je suis un <span>Developpeur Frontend</span></h3>
+            <p>
+                Le front-end désigne la partie d'une application ou d'un site web avec laquelle les utilisateurs
+                interagissent directement, c'est-à-dire ce qu'ils voient et utilisent à l'écran, comme la mise en page,
+                les images, et les boutons.</p>
+            <div class="icones">
+                <a href="#" style="--i:6"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" style="--i:7"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="--i:8"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" style="--i:9"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <!-- <div class="btn">Telecharger CV</div> -->
+        </div>
+        <div>
+            <img class="me-5 align-items-center ima1" src="image/moi.png" alt="">
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="apropos">
         <div class="boxed">
             <div class="flex colone mcentre">
                 <div class="w40 w100">
@@ -61,30 +93,54 @@
 
     </div>
 
-    <div class="section noir">
+    <div class="section noir" id="competence">
         <div class="boxed tcentre">
             <h2>Competences</h2>
-            <div class="flex colone g20">
-                <div class="w25 w100 skill">
-                    <img src="image/html5-logo.png" alt="">
-                    <h3>HTML</h3>
+            <!-- <div class="flex colone g20">
+                <div class=" w100 skill"> -->
+            <div class="continer text-center">
+                <div class="row gap-3 ">
+                    <div class="col bg-white p-3 d-flex rounded-4 skill w100 ">
+                        <img src="image/html5-logo.png" alt="">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/css3-logo.png" alt="">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/boostrap.png" alt="">
+                        <h3>Boostrap</h3>
+                    </div>
+                    <div class="col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/java-script.png" alt="">
+                        <h3>JAVA-SCRIPT</h3>
+                    </div>
                 </div>
-                <div class="w25 w100 skill">
-                    <img src="image/css3-logo.png" alt="">
-                    <h3>CSS</h3>
-                </div>
-                <div class="w25 w100 skill">
-                    <img src="image/java-script.png" alt="">
-                    <h3>JAVA-SCRIPT</h3>
-                </div>
-                <div class="w25 w100 skill">
-                    <img src="image/next-js.png" alt="">
-                    <h3>NEXT-JS</h3>
+                <div class="row gap-3 mt-3">
+
+                    <div class=" col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/PHP.png" alt="">
+                        <h3>PHP</h3>
+                    </div>
+                    <div class=" col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/mysql.png" alt="">
+                        <h3>Mysql</h3>
+                    </div>
+                    <div class=" col bg-white p-3 d-flex rounded-4 skill w100">
+                        <img src="image/github.png" alt="">
+                        <h3>github</h3>
+                    </div>
+                    <div class="col bg-white p-3 d-flex rounded-4 skill w100">
+                         <img src="image/qelectrotech.jpeg" alt="">
+                        <h3>QElectro Tech</h3>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section ">
+    <div class="section " id="realisation">
         <div class="boxed tcentre">
             <h2>Realisations</h2>
             <div class="flex wrap g20 between">
@@ -124,21 +180,21 @@
 
         </div>
     </div>
-    <div class="section noir">
+    <div class="section noir" id="contact">
         <div class="boxed tcentre">
             <h2>Conctactez-moi</h2>
             <div class="flex colone g20 between">
-                <div class="w32 w100 contact">   
-                    <span class="material-icons ion">mail</span>
+                <div class="w32 w100 contact">
+                    <span class=" ion"><i class="fa-solid fa-envelope"></i></span>
                     <span class="label">E-mail</span>
                     <span class="value">diabah021@gmail.com</span>
                 </div>
-                  <div class="w32 w100 contact">   
-                    <span class="material-icons ion">phone</span>
+                <div class="w32 w100 contact">
+                    <span class="ion"><i class="fa-solid fa-phone-flip"></i></span>
                     <span class="label">Phone</span>
                     <span class="value">+221 77 123 23 07</span>
                 </div>
-                  <div class="w32 w100 contact">   
+                <div class="w32 w100 contact">
                     <span class=" ion"><i class="fa-brands fa-whatsapp"></i></span>
                     <span class="label">Whatsapp</span>
                     <span class="value">+221 77 123 23 07</span>
@@ -147,6 +203,9 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
